@@ -1,0 +1,49 @@
+<!--// 메타-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="title" content="이온디">
+<meta name="keywords" content="windows,browser,webdesign,xe,coding,웹,html5,웹표준,웹디자인,윈도우,윈도우즈">
+
+<!--// 스타일시트-->
+<load target="css/bootstrap.min.css" />
+<load target="css/style.css" />
+
+<!--// 스크립트-->
+<load target="js/bootstrap.min.js" />
+
+<!--// 세팅-->
+<include target="setting.html" />
+
+<!--S: 바디-->
+<div class="container">
+<p class="skip"><a href="#content">{$lang->skip_to_content}</a></p>
+<!--S: 헤더그룹-->
+<hgroup class="hgroup">
+<!--s2: 헤더--><header class="header"><include target="header.html" /></header><!--//e: 헤더-->
+<!--s2: 메뉴--><div class="navbar"><div class="navbar-inner"><div class="container"><nav id="gnb" class="gnb"><include target="navbar.html" /></nav></div></div><!--//e: 메뉴-->
+</hgroup><!--//E: 헤더그룹-->
+<!--S: 사이드바-->
+<aside class="sidebar"><include target="sidebar.html" /></aside><!--//E: 사이드바-->
+<!--S: 컨텐츠-->
+<section class="contents">
+<!--s2: 빵조각-->
+<article class="breadcrumb"></article><!--//e: 빵조각-->
+<!--s2: 커버-->
+<load target="cover.html" /><!--//e: 커버-->
+<!--s2: 애드센스 상단-->
+<article class="ad_top"><include target="ad_top.html" /></article><!--//e: 애드센스 상단-->
+<!--s2: 본문-->
+<article id="content" class="content">{$content}</article><!--//e: 본문-->
+<!--s2: 매뉴얼-->
+<load target="manual.html" /><!--//e: 매뉴얼-->
+<!--s2: 애드센스 뷰-->
+<article class="ad_bottom"><include target="ad_bottom.html" /></article><!--//e: 에드센스 뷰-->
+<!--s2: 갤러리-->
+<article class="gallery"></article><!--//e: 갤러리-->
+<!--s2: 사이트맵-->
+<load target="sitemap.html" /><!--//e: 사이트맵-->
+</section><!--//E: 컨텐츠-->
+<!--S: 위젯바-->
+<aside class="widgetbar"><include target="widgetbar.html" /></aside><!--//E: 위젯바-->
+<!--S: 푸터-->
+<footer class="footer"><include target="footer.html" /></footer><!--//E: 푸터-->
+</div><!--//E: 바디-->
